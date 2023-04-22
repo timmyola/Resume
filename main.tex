@@ -1,0 +1,240 @@
+%-------------------------
+% Resume in Latex
+% Author : Nikunj Rajesh Thakur
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Timi Akinbaleye} \\ \vspace{1pt}
+    14 Hasker Rd, Brampton, ON LYA0Y5 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 905-965-6789~ \href{mailto:olajonlutimilehin@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{olajonlutimilehin@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/timmyola/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/timmyola}}  ~
+    \href{https://github.com/timmyola}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/timmyola}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {York University}{Sep. 2021 -- April 2025}
+      {Bachelors of Engineering., Spec. Hons. - Software Engineering}{Toronto, ON}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Data Structures
+                \item Computer Organization
+                \item Advanced OOP
+                \item Embedded Systems
+                \item Software Development
+                \item Operating Systems
+                \item Systems Programming
+                \item Computer Architecture
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {York University, Information Systems Department.}{March 2023 -- Present}
+      {IT Support Specialist}{North York, ON}
+      \resumeItemListStart
+              \resumeItem{Provided technical support across various environments and platforms, including academic, administrative, teaching spaces, and business desktops.}
+        \resumeItem{Utilized various software tools, including SCCM and ticketing systems, to manage tasks and respond to inquiries, while maintaining accurate records.}
+        \resumeItem{Demonstrated exceptional problem-solving skills, communication, and service orientation to ensure customer satisfaction and positive relationships with end-users.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {TNR Dev (Freelance)}{February 2022 -- Present}
+      {Full Stack Developer Intern}{Brampton, ON}
+      \resumeItemListStart
+        \resumeItem{Develops apps using Java(this secction is java, nik is swift, rambeer works on websapps)}
+        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+        \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Flexxx - Java Desktop App} $|$ \emph{Java, SQL, Eclipse, MySQL}}{April 2023}
+          \resumeItemListStart
+         \resumeItem{Developed a fitness planner app with advanced algorithms, utilizing JavaFX and databases with SQL, that enables users to create personalized workout plans.}
+\resumeItem{Implemented progress tracking and performance analytics features to help users easily achieve their fitness goals, with a user-friendly GUI.}
+\resumeItem{Conducted extensive user testing and feedback analysis, resulting in improvements to the app's functionality and ensuring a seamless user experience for the users.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+           \resumeProjectHeading
+          {\textbf{MessageMe - iOS App} $|$ \emph{Swift, Google Firebase Firestore, Xcode}}{December 2022}
+          \resumeItemListStart
+            \resumeItem{Produced a messaging application containing full functionality of sending and receiving messages.}
+            \resumeItem{Implemented Firebase Firestore database to take advantage of a client first SDK and real-time updates allowing to receive and send messages with ease.}
+            \resumeItem{Utilized fundamental UI/UX fundamentals to create an aesthetically appealing design. }
+            \resumeItem{Executed prominent message application principals to include: profile picture and timestamps.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Automatic Plant Watering System} $|$ \emph{Java, Arduino, IntelliJ}}{October 2022}
+          \resumeItemListStart
+            \resumeItem{Made an Automated Plant Watering System, which has comments like a moisture sensor, water pump, and a micro-controller.}
+            \resumeItem{This program was written in Java using the IntelliJ IDE, and components like the Arduino Groove Board}
+            \resumeItem{This programs constantly checks the moisture of the plant and decides if to water it or not based on the given
+conditions.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C, HTML/CSS, JavaScript, SQL, PowerShell, PHP, Swift} \\
+     \textbf{Developer Tools}{: VS Code, Eclipse, Google Cloud Platform, Android Studio, Xcode} \\
+     \textbf{Technologies/Frameworks}{: Linux, Jenkins, GitHub, JUnit, WordPress, Dart, Flutter} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Lassonde Engineering Society}{April 2022 -- Present}{Chief Returning Officer}{York University}
+            \resumeItemListStart
+           \resumeItem{Ensured fair and diverse candidate selection through impartial interviews and equitable access to resources.}
+             \resumeItem{Implemented secure voting procedures in collaboration with IT support, resulting in zero reported fraud or irregularities.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+\end{document}
